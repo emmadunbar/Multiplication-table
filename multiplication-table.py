@@ -1,7 +1,7 @@
 """
 multiplication-table.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Emma Dunbar
+Credit: pyformat.info, github, developers.google.com/edu/python/lists
 Assignment:
 
 Write and submit a Python program that prints a multiplication table. The user 
@@ -21,3 +21,10 @@ Height of multiplication table: 8
   7  14  21  28  35  42  49  56  63  70
   8  16  24  32  40  48  56  64  72  80
 """
+w=int(input("Width of multiplication table: "))
+h=int(input("Height of multiplication table: "))
+for y in range (1,h+1):
+    list=[y*i for i in range(1,w+1)]
+    for n in list:
+        print('{:>3}'.format(n), end=" ")
+    print( )
